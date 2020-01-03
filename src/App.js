@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Appform from './todoList/Appform.js';
+import Applist from './todoList/Applist.js';
+import 'antd/dist/antd.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            list : [
+                {id: 0, text: '天气不错哦!!!', complete: false},
+                {id: 1, text: '天气不错哦!!!', complete: false},
+                {id: 2, text: '出去玩啊!!!', complete: true},
+            ]
+        }
+    }
+    onAddItem (item) {
+        this.setState({
+            list: this.state.list.concat(item)
+        });
+    }
+    render() {
+        return (
+            <div>
+                <div>todo with react</div>
+                <Appform addItem={this.onAddItem.bind(this)}/>
+                <Applist list={this.state.list}/>
+            </div>
+        );
+    }
 }
+// function App() {
+//   return (
+//     <div>
+//       <div>todo with react</div>
+//       <Appform/>
+//       <Applist/>
+//     </div>
+//   );
+// }
 
 export default App;
