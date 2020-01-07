@@ -1,8 +1,8 @@
 import React from 'react';
+import Title from './todoList/Apptitle.js';
 import Appform from './todoList/Appform.js';
 import Applist from './todoList/Applist.js';
 import 'antd/dist/antd.css';
-
 
 class App extends React.Component {
     constructor(props){
@@ -23,7 +23,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div>todo with react</div>
+                <Title data={'todo with react'}></Title>
                 <Appform addItem={this.onAddItem.bind(this)}/>
                 <Applist list={this.state.list}/>
             </div>
@@ -34,10 +34,11 @@ class App extends React.Component {
 //   return (
 //     <div>
 //       <div>todo with react</div>
-//       <Appform/>
-//       <Applist/>
+//       {/*<Appform/>*/}
+//       {/*<Applist/>*/}
 //     </div>
 //   );
 // }
+
 
 export default App;
