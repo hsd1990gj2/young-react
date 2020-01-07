@@ -3,7 +3,8 @@ class Clock extends React.Component{
     constructor(){
         super();
         this.state = {
-            time: new Date().toLocaleString()
+            time: new Date().toLocaleString(),
+            num: 0
         }
     }
     componentDidMount() {
@@ -32,9 +33,9 @@ class Clock extends React.Component{
             //console.log(this.refs)  {time: h2}
 
             this.time.innerHTML = new Date().toLocaleString();
-            console.log(this.time)
+            // console.log(this.time)  {time: h2}
 
-        }, 1000)
+        }, 10000)
     }
 
     render() {
@@ -42,7 +43,19 @@ class Clock extends React.Component{
 
         //ref的值除了是字符串外，还可以是函数。如果是函数，参数x代表的就是当前元素本身，而我们一般会把当前元素直接挂载到实例上，
         // 以后直接this.xxx就可以操作元素了(例如：这里的x就是h2)
-        return <h2 ref={x => {this.time = x}}>{this.state.time}</h2>
+        // return <h2 ref={x => {this.time = x}}>{this.state.time}</h2>
+
+        return (
+            <div>
+                <button onClick={event => {
+                    //
+                    this.setState({
+                        num: this.state.num+1
+                    });
+                    console.log(this.state.num);
+                }}>点我</button>
+            </div>
+        )
     }
 }
 export default Clock;
