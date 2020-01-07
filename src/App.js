@@ -3,6 +3,9 @@ import Appform from './todoList/Appform.js';
 import Applist from './todoList/Applist.js';
 import 'antd/dist/antd.css';
 
+import Say from './study/say.js'
+import Clock from './study/clock.js'
+
 
 class App extends React.Component {
     constructor(props){
@@ -26,6 +29,9 @@ class App extends React.Component {
                 <div>todo with react</div>
                 <Appform addItem={this.onAddItem.bind(this)}/>
                 <Applist list={this.state.list}/>
+                <Say num={10}></Say>
+                <Say title={'two'} num={20}></Say>
+                <Clock></Clock>
             </div>
         );
     }
