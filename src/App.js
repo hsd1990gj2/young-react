@@ -6,6 +6,7 @@ import 'antd/dist/antd.css';
 
 import Say from './study/say.js'
 import Clock from './study/clock.js'
+import Banner from './component/banner.js'
 
 class App extends React.Component {
     constructor(props){
@@ -26,12 +27,13 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Title data={'todo with react'}></Title>
+                <Title data={'todo with react'}>one</Title>
                 <Appform addItem={this.onAddItem.bind(this)}/>
                 <Applist list={this.state.list}/>
                 <Say num={10}></Say>
                 <Say title={'two'} num={20}></Say>
                 <Clock></Clock>
+                <Banner></Banner>
             </div>
         );
     }

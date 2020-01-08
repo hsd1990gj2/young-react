@@ -12,7 +12,12 @@ class Title extends React.Component{
         super();
     }
     render() {
-        return <h2>{this.props.data}</h2>;
+        return (
+            <div>
+                <h2>{this.props.data}</h2>
+                <h4>{this.props.children}</h4>
+            </div>
+        )
     }
 }
 export default Title
