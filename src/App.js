@@ -8,6 +8,21 @@ import Say from './study/say.js'
 import Clock from './study/clock.js'
 import Banner from './component/banner.js'
 
+let list = [
+    {
+        id: 1,
+        title: '1'
+    },
+    {
+        id: 2,
+        title: '2'
+    },
+    {
+        id: 3,
+        title: '3'
+    }
+];
+
 class App extends React.Component {
     constructor(props){
         super(props);
@@ -27,13 +42,13 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Title data={'todo with react'}>one</Title>
-                <Appform addItem={this.onAddItem.bind(this)}/>
-                <Applist list={this.state.list}/>
-                <Say num={10}></Say>
-                <Say title={'two'} num={20}></Say>
-                <Clock></Clock>
-                <Banner></Banner>
+                {/*<Title data={'todo with react'}>one</Title>*/}
+                {/*<Appform addItem={this.onAddItem.bind(this)}/>*/}
+                {/*<Applist list={this.state.list}/>*/}
+                {/*<Say num={10}></Say>*/}
+                {/*<Say title={'two'} num={20}></Say>*/}
+                {/*<Clock></Clock>*/}
+                <Banner list={list}></Banner>
             </div>
         );
     }
