@@ -1,11 +1,11 @@
 import React from 'react';
+import Title from './todoList/Apptitle.js';
 import Appform from './todoList/Appform.js';
 import Applist from './todoList/Applist.js';
 import 'antd/dist/antd.css';
 
 import Say from './study/say.js'
 import Clock from './study/clock.js'
-
 
 class App extends React.Component {
     constructor(props){
@@ -26,7 +26,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <div>todo with react</div>
+                <Title data={'todo with react'}></Title>
                 <Appform addItem={this.onAddItem.bind(this)}/>
                 <Applist list={this.state.list}/>
                 <Say num={10}></Say>
@@ -36,5 +36,6 @@ class App extends React.Component {
         );
     }
 }
+
 
 export default App;
