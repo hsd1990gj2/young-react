@@ -36,14 +36,5 @@ class App extends React.Component {
         );
     }
 }
-// function App() {
-//   return (
-//     <div>
-//       <div>todo with react</div>
-//       <Appform/>
-//       <Applist/>
-//     </div>
-//   );
-// }
 
 export default App;

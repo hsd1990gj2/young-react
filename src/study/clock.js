@@ -5,7 +5,8 @@ class Clock extends React.Component{
         this.state = {
             time: new Date().toLocaleString(),
             num: 0
-        }
+        };
+        this.time = React.createRef();  //通过函数创建一个
     }
     componentDidMount() {
         /**
@@ -32,10 +33,10 @@ class Clock extends React.Component{
             // this.refs.time.innerHTML = new Date().toLocaleString();
             //console.log(this.refs)  {time: h2}
 
-            this.time.innerHTML = new Date().toLocaleString();
-            // console.log(this.time)  {time: h2}
+            this.time.current.innerHTML = new Date().toLocaleString();
+            // console.log(this.time)  //{time: h2}
 
-        }, 10000)
+        }, 1000)
     }
 
     render() {
@@ -43,16 +44,18 @@ class Clock extends React.Component{
 
         //ref的值除了是字符串外，还可以是函数。如果是函数，参数x代表的就是当前元素本身，而我们一般会把当前元素直接挂载到实例上，
         // 以后直接this.xxx就可以操作元素了(例如：这里的x就是h2)
-        // return <h2 ref={x => {this.time = x}}>{this.state.time}</h2>
 
         return (
             <div>
+                {/*<h2 ref={x => {this.time = x}}>{this.state.time}</h2>*/}
+                <h2 ref={this.time}>{this.state.time}</h2>
                 <button onClick={event => {
-                    //
+                    //此处setState修改组件的状态是异步编程：执行完setState后，会把修改状态和通知组件渲染的操作放到EventQueue(等待事件队列中),当后面的主栈任务完成才会执行这个操作。
+                    //但setState不全是异步操作。
                     this.setState({
                         num: this.state.num+1
                     });
-                    console.log(this.state.num);
+                    console.log(this.state.num);    //第一次打印的是0
                 }}>点我</button>
             </div>
         )
