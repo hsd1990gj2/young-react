@@ -38,13 +38,13 @@ class Clock extends React.Component{
 
         }, 1000)
     }
-
     render() {
         // return <h2 ref={'time'}>{this.state.time}</h2>
 
         //ref的值除了是字符串外，还可以是函数。如果是函数，参数x代表的就是当前元素本身，而我们一般会把当前元素直接挂载到实例上，
         // 以后直接this.xxx就可以操作元素了(例如：这里的x就是h2)
 
+        const numbers = [1, 2, 3, 4, 5];
         return (
             <div>
                 {/*<h2 ref={x => {this.time = x}}>{this.state.time}</h2>*/}
@@ -57,6 +57,11 @@ class Clock extends React.Component{
                     });
                     console.log(this.state.num);    //第一次打印的是0
                 }}>点我</button>
+
+                {
+                    numbers.map((number) => <li key={number.toString()}>{number}</li>)
+                }
+
             </div>
         )
     }
