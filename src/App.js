@@ -4,7 +4,8 @@ import Appform from './todoList/Appform.js';
 import Applist from './todoList/Applist.js';
 import 'antd/dist/antd.css';
 
-import './store/index.js'
+import store from './store/index.js'
+import {Provider} from 'react-redux'
 
 
 import Say from './study/say.js'
@@ -12,8 +13,9 @@ import Clock from './study/clock.js'
 import Form from './study/form.js'
 import Banner from './component/banner.js'
 // import Vote from './study/vote.js'
-import Vote1 from './study/vote1.js'
-import Vote from './redux/vote2.js'
+// import Vote1 from './study/vote1.js'
+// import Vote2 from './redux/vote2.js'
+import Vote3 from './redux/vote3.js'
 
 
 
@@ -52,19 +54,22 @@ class App extends React.Component {
     }
     render() {
         return (
-            <div>
-                {/*<Title data={'todo with react'}>one</Title>*/}
-                {/*<Appform addItem={this.onAddItem.bind(this)}/>*/}
-                {/*<Applist list={this.state.list}/>*/}
-                {/*<Say num={10}></Say>*/}
-                {/*<Say title={'two'} num={20}></Say>*/}
-                {/*<Clock flag={this.state.flag}></Clock>*/}
-                {/*<Form></Form>*/}
-                {/*<Banner list={list}></Banner>*/}
-                <Vote title={'标题一'}></Vote>
-                {/*<Vote1 title={'标题二'}></Vote1>*/}
+            <Provider store={store}>
+                <div>
+                    {/*<Title data={'todo with react'}>one</Title>*/}
+                    {/*<Appform addItem={this.onAddItem.bind(this)}/>*/}
+                    {/*<Applist list={this.state.list}/>*/}
+                    {/*<Say num={10}></Say>*/}
+                    {/*<Say title={'two'} num={20}></Say>*/}
+                    {/*<Clock flag={this.state.flag}></Clock>*/}
+                    {/*<Form></Form>*/}
+                    {/*<Banner list={list}></Banner>*/}
+                    {/*<Vote1 title={'标题一'}></Vote1>*/}
+                    {/*<Vote2 title={'标题二'}></Vote2>*/}
+                    <Vote3></Vote3>
 
-            </div>
+                </div>
+            </Provider>
         );
     }
 }
