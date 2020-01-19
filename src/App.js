@@ -4,8 +4,10 @@ import Appform from './todoList/Appform.js';
 import Applist from './todoList/Applist.js';
 import 'antd/dist/antd.css';
 
-import store from './store/index.js'
 import {Provider} from 'react-redux'
+// import {Provider} from './reactRedux/my-react-redux.js'
+import store from './store/index.js'
+
 
 
 import Say from './study/say.js'
@@ -15,7 +17,7 @@ import Banner from './component/banner.js'
 // import Vote from './study/vote.js'
 // import Vote1 from './study/vote1.js'
 // import Vote2 from './redux/vote2.js'
-import Vote3 from './redux/vote3.js'
+import Vote3 from './reactRedux/vote3.js'
 
 
 
@@ -54,6 +56,7 @@ class App extends React.Component {
     }
     render() {
         return (
+            //利用provider
             <Provider store={store}>
                 <div>
                     {/*<Title data={'todo with react'}>one</Title>*/}

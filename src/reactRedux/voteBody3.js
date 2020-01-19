@@ -1,11 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux'
+// import {connect} from './my-react-redux.js'
 class VoteBody extends React.Component{
     constructor(){
         super()
     }
     render() {
-        console.log(this.props);
         let {n, m} = this.props;  //直接都从props属性上取就可以了
         return (
             <div>
@@ -15,10 +15,4 @@ class VoteBody extends React.Component{
         )
     }
 }
-// function mapStateToProps(state) {
-//     return {
-//         ...state.vote
-//     }
-// }
-// export default connect(mapStateToProps)(VoteBody);
 export default connect(state => {return {...state.vote}})(VoteBody);
