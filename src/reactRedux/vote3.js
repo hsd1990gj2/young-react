@@ -15,3 +15,4 @@ class Vote extends React.Component{
     }
 }
 export default Vote;
+

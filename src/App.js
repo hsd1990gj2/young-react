@@ -70,7 +70,6 @@ class App extends React.Component {
                     {/*<Vote1 title={'标题一'}></Vote1>*/}
                     {/*<Vote2 title={'标题二'}></Vote2>*/}
                     <Vote3></Vote3>
-
                 </div>
             </Provider>
         );
