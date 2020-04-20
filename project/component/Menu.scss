@@ -1,0 +1,22 @@
+.footerMenu{
+  height: 100%;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  a{
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    color: #000;
+    &:hover, &.active{
+      cursor: pointer;
+      color: #9d0800;
+    }
+    i{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}

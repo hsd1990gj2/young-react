@@ -1,0 +1,9 @@
+{
+  "name": "张三",
+  "imgList": [
+    "/imgs/a.png",
+    "/imgs/b.png",
+    "/imgs/c.png",
+    "/imgs/d.png"
+  ]
+}

@@ -4,10 +4,10 @@
     "reportVersion": 1,
     "event": "Allocation failed - JavaScript heap out of memory",
     "trigger": "FatalError",
-    "filename": "report.20200118.093014.11608.0.001.json",
-    "dumpEventTime": "2020-01-18T09:30:14Z",
-    "dumpEventTimeStamp": "1579311014899",
-    "processId": 11608,
+    "filename": "report.20200216.121654.8872.0.001.json",
+    "dumpEventTime": "2020-02-16T12:16:54Z",
+    "dumpEventTimeStamp": "1581826614963",
+    "processId": 8872,
     "cwd": "C:\\E盘\\mywork\\young-react",
     "commandLine": [
       "node",
@@ -43,81 +43,81 @@
       "libUrl": "https://nodejs.org/download/release/v12.14.0/win-x64/node.lib"
     },
     "osName": "Windows_NT",
-    "osRelease": "10.0.18362",
+    "osRelease": "10.0.18363",
     "osVersion": "Windows 10 Home China",
     "osMachine": "x86_64",
     "cpus": [
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 31241046,
+        "user": 582562,
         "nice": 0,
-        "sys": 43318625,
-        "idle": 386677953,
-        "irq": 6127390
+        "sys": 686406,
+        "idle": 3833171,
+        "irq": 71906
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 17747984,
+        "user": 512390,
         "nice": 0,
-        "sys": 18083984,
-        "idle": 425405187,
-        "irq": 272000
+        "sys": 524156,
+        "idle": 4064921,
+        "irq": 10171
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 40282718,
+        "user": 745328,
         "nice": 0,
-        "sys": 39197671,
-        "idle": 381756718,
-        "irq": 576734
+        "sys": 654078,
+        "idle": 3702062,
+        "irq": 11140
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 20553312,
+        "user": 573515,
         "nice": 0,
-        "sys": 24365140,
-        "idle": 416318703,
-        "irq": 428328
+        "sys": 528656,
+        "idle": 3999296,
+        "irq": 10734
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 35645812,
+        "user": 808765,
         "nice": 0,
-        "sys": 40075296,
-        "idle": 385516000,
-        "irq": 771765
+        "sys": 665703,
+        "idle": 3626984,
+        "irq": 13234
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 19880468,
+        "user": 656109,
         "nice": 0,
-        "sys": 18954484,
-        "idle": 422402171,
-        "irq": 300406
+        "sys": 575109,
+        "idle": 3870234,
+        "irq": 10218
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 31860812,
+        "user": 762484,
         "nice": 0,
-        "sys": 35745218,
-        "idle": 393631093,
-        "irq": 697171
+        "sys": 600640,
+        "idle": 3738328,
+        "irq": 10828
       },
       {
         "model": "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz",
         "speed": 1992,
-        "user": 25935953,
+        "user": 659000,
         "nice": 0,
-        "sys": 25811000,
-        "idle": 409490203,
-        "irq": 309093
+        "sys": 548234,
+        "idle": 3894218,
+        "irq": 7140
       }
     ],
     "networkInterfaces": [
@@ -166,75 +166,87 @@
   },
   "nativeStack": [
     {
-      "pc": "0x00007ff64a331729",
+      "pc": "0x00007ff603681729",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
     },
     {
-      "pc": "0x00007ff64a335b4c",
+      "pc": "0x00007ff603685b4c",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
     },
     {
-      "pc": "0x00007ff64a334b08",
+      "pc": "0x00007ff603684b08",
       "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
     },
     {
-      "pc": "0x00007ff64a42369b",
+      "pc": "0x00007ff60377369b",
       "symbol": "v8::base::CPU::has_sse+37723"
     },
     {
-      "pc": "0x00007ff64ac282de",
+      "pc": "0x00007ff603f782de",
       "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
     },
     {
-      "pc": "0x00007ff64ac10321",
+      "pc": "0x00007ff603f60321",
       "symbol": "v8::SharedArrayBuffer::Externalize+833"
     },
     {
-      "pc": "0x00007ff64aaddbec",
+      "pc": "0x00007ff603e2dbec",
       "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
     },
     {
-      "pc": "0x00007ff64aae8f90",
+      "pc": "0x00007ff603e38f90",
       "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
     },
     {
-      "pc": "0x00007ff64aae5ac4",
+      "pc": "0x00007ff603e35ac4",
       "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
     },
     {
-      "pc": "0x00007ff64aadb353",
+      "pc": "0x00007ff603e2b353",
       "symbol": "v8::internal::Heap::CollectGarbage+1283"
     },
     {
-      "pc": "0x00007ff64aad9b24",
+      "pc": "0x00007ff603e29b24",
       "symbol": "v8::internal::Heap::AddRetainedMap+2356"
     },
     {
-      "pc": "0x00007ff64aafadf5",
-      "symbol": "v8::internal::Factory::NewFillerObject+53"
+      "pc": "0x00007ff603e51b17",
+      "symbol": "v8::internal::Factory::NewRawTwoByteString+87"
     },
     {
-      "pc": "0x00007ff64a866e19",
-      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+      "pc": "0x00007ff603c78d0c",
+      "symbol": "v8::internal::String::SlowFlatten+492"
     },
     {
-      "pc": "0x00007ff64b05404d",
+      "pc": "0x00007ff603b41cef",
+      "symbol": "unibrow::Utf8::EncodeOneByte+687"
+    },
+    {
+      "pc": "0x00007ff603c76d7e",
+      "symbol": "v8::Name::GetIdentityHash+558"
+    },
+    {
+      "pc": "0x00007ff603b7c30a",
+      "symbol": "v8::internal::StubCache::value_reference+11658"
+    },
+    {
+      "pc": "0x00007ff6043a404d",
       "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
     },
     {
-      "pc": "0x00007ff64afd3173",
-      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+39859"
+      "pc": "0x00007ff60438ea7b",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+480443"
     },
     {
-      "pc": "0x000002757cfcfdd8",
+      "pc": "0x000000ba89644fb7",
       "symbol": ""
     }
   ],
   "javascriptHeap": {
-    "totalMemory": 2163232768,
-    "totalCommittedMemory": 2163232768,
-    "usedMemory": 1876733256,
-    "availableMemory": 99104288,
+    "totalMemory": 2162671616,
+    "totalCommittedMemory": 2162671616,
+    "usedMemory": 1860835792,
+    "availableMemory": 101470104,
     "memoryLimit": 2197815296,
     "heapSpaces": {
       "read_only_space": {
@@ -248,35 +260,35 @@
         "memorySize": 33554432,
         "committedMemory": 33554432,
         "capacity": 16759808,
-        "used": 2893768,
-        "available": 13866040
+        "used": 2899840,
+        "available": 13859968
       },
       "old_space": {
-        "memorySize": 2033037312,
-        "committedMemory": 2033037312,
-        "capacity": 1812283112,
-        "used": 1778616776,
-        "available": 33666336
+        "memorySize": 1993191424,
+        "committedMemory": 1993191424,
+        "capacity": 1759219448,
+        "used": 1723742376,
+        "available": 35477072
       },
       "code_space": {
-        "memorySize": 1474560,
-        "committedMemory": 1474560,
-        "capacity": 1227968,
-        "used": 1227968,
+        "memorySize": 1998848,
+        "committedMemory": 1998848,
+        "capacity": 1582784,
+        "used": 1582784,
         "available": 0
       },
       "map_space": {
-        "memorySize": 3149824,
-        "committedMemory": 3149824,
-        "capacity": 2401440,
-        "used": 2401440,
+        "memorySize": 3936256,
+        "committedMemory": 3936256,
+        "capacity": 3067680,
+        "used": 3067680,
         "available": 0
       },
       "large_object_space": {
-        "memorySize": 91131904,
-        "committedMemory": 91131904,
-        "capacity": 91010608,
-        "used": 91010608,
+        "memorySize": 129105920,
+        "committedMemory": 129105920,
+        "capacity": 128960416,
+        "used": 128960416,
         "available": 0
       },
       "code_large_object_space": {
@@ -296,17 +308,17 @@
     }
   },
   "resourceUsage": {
-    "userCpuSeconds": 221.312,
-    "kernelCpuSeconds": 368.562,
-    "cpuConsumptionPercent": 427.445,
-    "maxRss": 2703970304,
+    "userCpuSeconds": 308.671,
+    "kernelCpuSeconds": 449.671,
+    "cpuConsumptionPercent": 16.2386,
+    "maxRss": 2796826624,
     "pageFaults": {
-      "IORequired": 1179944,
+      "IORequired": 1375925,
       "IONotRequired": 0
     },
     "fsActivity": {
-      "reads": 7531,
-      "writes": 5
+      "reads": 9696,
+      "writes": 35
     }
   },
   "libuv": [
@@ -340,7 +352,7 @@
     "npm_config_allow_same_version": "",
     "npm_config_also": "",
     "npm_config_always_auth": "",
-    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"run\",\"start\"]}",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"start\"],\"original\":[\"start\"]}",
     "npm_config_audit": "true",
     "npm_config_audit_level": "low",
     "npm_config_auth_type": "legacy",
@@ -471,6 +483,7 @@
     "npm_package_browserslist_production_1": "not dead",
     "npm_package_browserslist_production_2": "not op_mini all",
     "npm_package_dependencies_antd": "^3.26.5",
+    "npm_package_dependencies_axios": "^0.19.2",
     "npm_package_dependencies_babel_eslint": "10.0.3",
     "npm_package_dependencies_babel_jest": "^24.9.0",
     "npm_package_dependencies_babel_loader": "8.0.6",
@@ -509,6 +522,8 @@
     "npm_package_dependencies_react_app_polyfill": "^1.0.5",
     "npm_package_dependencies_react_dev_utils": "^10.0.0",
     "npm_package_dependencies_react_dom": "^16.12.0",
+    "npm_package_dependencies_react_redux": "^7.1.3",
+    "npm_package_dependencies_react_router_dom": "^5.1.2",
     "npm_package_dependencies_redux": "^4.0.5",
     "npm_package_dependencies_resolve": "1.12.2",
     "npm_package_dependencies_resolve_url_loader": "3.1.1",
@@ -527,8 +542,10 @@
     "npm_package_dependencies__typescript_eslint_eslint_plugin": "^2.8.0",
     "npm_package_dependencies__typescript_eslint_parser": "^2.8.0",
     "npm_package_description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "npm_package_devDependencies_node_sass": "^4.13.1",
+    "npm_package_devDependencies_Reset_CSS": "^",
     "npm_package_eslintConfig_extends": "react-app",
-    "npm_package_gitHead": "36f03398394c84548205b82bc7be26369f7074a1",
+    "npm_package_gitHead": "c46d62040b28a4e521002d97e1085318456c2795",
     "npm_package_jest_collectCoverageFrom_0": "src/**/*.{js,jsx,ts,tsx}",
     "npm_package_jest_collectCoverageFrom_1": "!src/**/*.d.ts",
     "npm_package_jest_moduleFileExtensions_0": "web.js",
@@ -567,7 +584,7 @@
     "OneDrive": "C:\\Users\\45384\\OneDrive",
     "OneDriveConsumer": "C:\\Users\\45384\\OneDrive",
     "OS": "Windows_NT",
-    "PATH": "C:\\Users\\45384\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\E盘\\mywork\\young-react\\node_modules\\.bin;C:\\E盘\\mywork\\young-react\\node_modules\\.bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Users\\45384\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\45384\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\45384\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\45384\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\45384\\AppData\\Roaming\\npm",
+    "PATH": "C:\\Users\\45384\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\E盘\\mywork\\young-react\\node_modules\\.bin;C:\\E盘\\mywork\\young-react\\node_modules\\.bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\OpenVPN\\bin;C:\\Users\\45384\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\45384\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\45384\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Users\\45384\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\45384\\AppData\\Roaming\\npm",
     "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
     "PROCESSOR_ARCHITECTURE": "AMD64",
     "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
@@ -607,11 +624,11 @@
     "C:\\WINDOWS\\System32\\sechost.dll",
     "C:\\WINDOWS\\System32\\USER32.dll",
     "C:\\WINDOWS\\System32\\win32u.dll",
-    "C:\\WINDOWS\\System32\\GDI32.dll",
     "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
     "C:\\WINDOWS\\System32\\gdi32full.dll",
     "C:\\WINDOWS\\System32\\msvcp_win.dll",
-    "C:\\WINDOWS\\System32\\ucrtbase.dll",
     "C:\\WINDOWS\\System32\\PSAPI.DLL",
     "C:\\WINDOWS\\System32\\CRYPT32.dll",
     "C:\\WINDOWS\\System32\\MSASN1.dll",
@@ -638,6 +655,7 @@
     "C:\\Program Files\\Bonjour\\mdnsNSP.dll",
     "C:\\Windows\\System32\\rasadhlp.dll",
     "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "\\\\?\\C:\\E盘\\mywork\\young-react\\node_modules\\_node-sass@4.13.1@node-sass\\vendor\\win32-x64-72\\binding.node",
     "C:\\WINDOWS\\system32\\napinsp.dll",
     "C:\\WINDOWS\\system32\\pnrpnsp.dll",
     "C:\\WINDOWS\\System32\\winrnr.dll",

@@ -3,6 +3,10 @@ class VoteFooter extends React.Component{
     constructor(){
         super()
     }
+    componentDidMount() {
+
+    }
+
     render() {
         let {handleNum} = this.props;
         return (
