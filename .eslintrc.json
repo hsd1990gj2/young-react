@@ -1,0 +1,12 @@
+{
+  "parser": "@typescript-eslint/parser",  //解析为语法树进行检验
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": 2
+  }
+}

@@ -10,6 +10,12 @@ let vote = {
         return {
             type: TYPES.VOTE_AGAINST
         }
-    }
+    },
+    updateName(name){
+        return {
+            type: TYPES.VOTE_NAME,
+            name: name
+        }
+    },
 };
 export default vote;
